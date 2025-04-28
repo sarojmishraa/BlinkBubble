@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BlinkBubble</title>
+  <link rel="stylesheet" href="blink.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="black-page">
+      <canvas id="bubbleCanvas"></canvas>
+      <div class="content-container">
+        <h1 class="bubble-text">Blink Bubble Express</h1>
+      </div>
+    </div>
+    <div class="white-page">
+      <div class="wave-container">
+        <div class="wave" style="animation-delay: 0s; bottom: 0vh"></div>
+        <div class="wave" style="animation-delay: 0.2s; bottom: 20vh"></div>
+        <div class="wave" style="animation-delay: 0.4s; bottom: 40vh"></div>
+        <div class="wave" style="animation-delay: 0.6s; bottom: 60vh"></div>
+        <div class="wave" style="animation-delay: 0.8s; bottom: 80vh"></div>
+        <div class="content-container">
+          <h1 class="blink-text">blinkcms</h1>
+        </div>
+      </div>
+      <div class="scroll-container" id="scrollContainer"></div>
+    </div>
+  </div>
+
+  <div class="full-news" id="fullNews">
+    <div class="full-news-header">
+      <button class="icon-btn" onclick="closeFullNews()"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></button>
+      <div class="header-title"><img src="/images/logo.png" alt="" srcset=""></div>
+      <button class="icon-btn" onclick="shareNews()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+      </svg></button>
+    </div>
+    <div class="main-news">
+      <img id="newsImage" src="" alt="News Image">
+      <h2 id="newsTitle"></h2>
+      <h4 id="newsSubtitle"></h4>
+      <p id="newsDescription"></p>
+    </div>
+  </div>
+<script src="blink.js"></script>
+</body>
+</html>
